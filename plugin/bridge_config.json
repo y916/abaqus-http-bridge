@@ -1,0 +1,30 @@
+{
+  "_comment": [
+    "Abaqus HTTP Bridge configuration.",
+    "Restart Abaqus/CAE after editing.",
+    "enabled: true opens the port automatically at CAE startup (GUI plugin and bootstrap).",
+    "token:   when non-empty, every request except /health and /ready must send X-Bridge-Token.",
+    "Environment variables override this file."
+  ],
+  "enabled": false,
+  "host": "127.0.0.1",
+  "port": 49321,
+  "port_candidates": [
+    8791,
+    18152,
+    33001,
+    34001,
+    49321,
+    51234,
+    56789,
+    52345,
+    60001,
+    65000
+  ],
+  "token": "",
+  "allow_port_fallback": true,
+  "timeout": 120,
+  "max_body_bytes": 8388608,
+  "log_requests": true,
+  "state_dir": ""
+}
